@@ -309,12 +309,11 @@
 					dataType: 'json',
 					success: function (data) {
 						if (data.errorCode) {
-							$('#etree').tree('remove', node.target);
-							console.log(data.message);
-							resetValue()
+							//$('#etree').tree('remove', node.target);
+							editor.getSession().setValue(data.message);
+							//resetValue()
 						} else {
 							$('#elayout').layout('panel', 'center').panel('setTitle', newValue);
-
 							editor.getSession().setValue(data.node.value);
 							//if (autoFormat === 'true') {
 							//format(aceMode);
@@ -324,7 +323,7 @@
 								ttl = data.node.ttl;
 							}
 							changeFooter(ttl, data.node.createdIndex, data.node.modifiedIndex);
-							changeModeBySuffix(node.path);
+							changeModeBySuffix(newValue);
 						}
 					},
 					error: function (err) {
