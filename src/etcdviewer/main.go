@@ -63,22 +63,22 @@ func main() {
 
 	// v2
 	//http.HandleFunc(*name, v2request)
-	http.HandleFunc("/v2/separator", middleware(nothing, getSeparator))
-	http.HandleFunc("/v2/connect", middleware(nothing, connectV2))
-	http.HandleFunc("/v2/put", middleware(nothing, putV2))
-	http.HandleFunc("/v2/get", middleware(nothing, getV2))
-	http.HandleFunc("/v2/delete", middleware(nothing, delV2))
+	http.HandleFunc("/etcdviewer/v2/separator", middleware(nothing, getSeparator))
+	http.HandleFunc("/etcdviewer/v2/connect", middleware(nothing, connectV2))
+	http.HandleFunc("/etcdviewer/v2/put", middleware(nothing, putV2))
+	http.HandleFunc("/etcdviewer/v2/get", middleware(nothing, getV2))
+	http.HandleFunc("/etcdviewer/v2/delete", middleware(nothing, delV2))
 	// dirctory mode
-	http.HandleFunc("/v2/getpath", middleware(nothing, getPathV2))
+	http.HandleFunc("/etcdviewer/v2/getpath", middleware(nothing, getPathV2))
 
 	// v3
-	http.HandleFunc("/v3/separator", middleware(nothing, getSeparator))
-	http.HandleFunc("/v3/connect", middleware(nothing, connect))
-	http.HandleFunc("/v3/put", middleware(nothing, put))
-	http.HandleFunc("/v3/get", middleware(nothing, get))
-	http.HandleFunc("/v3/delete", middleware(nothing, del))
+	http.HandleFunc("/etcdviewer/v3/separator", middleware(nothing, getSeparator))
+	http.HandleFunc("/etcdviewer/v3/connect", middleware(nothing, connect))
+	http.HandleFunc("/etcdviewer/v3/put", middleware(nothing, put))
+	http.HandleFunc("/etcdviewer/v3/get", middleware(nothing, get))
+	http.HandleFunc("/etcdviewer/v3/delete", middleware(nothing, del))
 	// dirctory mode
-	http.HandleFunc("/v3/getpath", middleware(nothing, getPath))
+	http.HandleFunc("/etcdviewer/v3/getpath", middleware(nothing, getPath))
 
 	wd, err := os.Executable()
 	if err != nil {
