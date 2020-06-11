@@ -1,5 +1,5 @@
 ![image](https://github.com/evildecay/etcdviewer/blob/master/logo/logo-horizontal.png)
-## ETCD Keeper
+## ETCD Viewer
 * Lightweight etcd web client.
 * Support etcd 2.x and etcd 3.x.
 * The server uses the etcd go client interface, and the server compiles with the etcd client package.
