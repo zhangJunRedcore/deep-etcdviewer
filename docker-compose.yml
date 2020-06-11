@@ -16,9 +16,9 @@
 #    - 2380:2380
 #    - 4001:4001
 #
-#  etcdkeeper:
+#  etcdviewer:
 #    build: .
-#    container_name: "etcdkeeper"
+#    container_name: "etcdviewer"
 #    environment:
 #      HOST: "0.0.0.0"
 #    ports:

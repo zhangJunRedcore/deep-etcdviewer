@@ -1,4 +1,4 @@
-![image](https://github.com/evildecay/etcdkeeper/blob/master/logo/logo-horizontal.png)
+![image](https://github.com/evildecay/etcdviewer/blob/master/logo/logo-horizontal.png)
 ## ETCD Keeper
 * Lightweight etcd web client.
 * Support etcd 2.x and etcd 3.x.
@@ -6,11 +6,11 @@
 * Based easyui framework to achieve(easyui license [easyui website](http://www.jeasyui.com)).
 
 ## Usage
-* Run etcdkeeper.exe (windows version)
-* Run etcdkeeper.exe -auth (If enable etcd authentication)
-* [Download other platform releases](https://github.com/evildecay/etcdkeeper/releases).
+* Run etcdviewer.exe (windows version)
+* Run etcdviewer.exe -auth (If enable etcd authentication)
+* [Download other platform releases](https://github.com/evildecay/etcdviewer/releases).
 ```
-  Usage of etcdkeeper.exe:
+  Usage of etcdviewer.exe:
   -h string
         host name or ip address (default: "0.0.0.0", the http server addreess, not etcd address)
   -p int
@@ -30,12 +30,12 @@
   -timeout int
         ETCD client connect timeout
 ```
-* Open your browser and enter the address: http://127.0.0.1:8080/etcdkeeper
+* Open your browser and enter the address: http://127.0.0.1:8080/etcdviewer
 * Click on the version of the title to select the version of ETCD. The default is V3. Reopening will remember your choice.
 * Right click on the tree node to add or delete.
 * Get data based on etcd user permissions.
   - Just display the list according to the configured permissions, and there will be time to add the configuration permission features.
-  - Each time you restart etcdkeeper, you need to enter the root username and password for each etcd server address. 
+  - Each time you restart etcdviewer, you need to enter the root username and password for each etcd server address. 
   - [enable etcdv3 authentication](https://github.com/etcd-io/etcd/blob/master/Documentation/op-guide/authentication.md)
   - [enable etcdv2 authentication](https://github.com/etcd-io/etcd/blob/master/Documentation/v2/authentication.md)
 * Display the status information of etcd, version, data size.
@@ -53,13 +53,13 @@
 Because the etcdv3 version uses the new storage concept, without the catalog concept, the client uses the previous default "/" delimiter to view. See the documentation for etcdv3 [clientv3 doc](https://godoc.org/github.com/coreos/etcd/clientv3).
 
 ## Docker
-Etdkeeper official image. (https://hub.docker.com/r/evildecay/etcdkeeper)
+Etdkeeper official image. (https://hub.docker.com/r/evildecay/etcdviewer)
 
 ## Screenshots
-![image](https://github.com/evildecay/etcdkeeper/blob/master/screenshots/ui.png)
+![image](https://github.com/evildecay/etcdviewer/blob/master/screenshots/ui.png)
 
 ## Demo
-![image](https://github.com/evildecay/etcdkeeper/blob/master/screenshots/ui.gif)
+![image](https://github.com/evildecay/etcdviewer/blob/master/screenshots/ui.gif)
 
 ## License
 MIT
